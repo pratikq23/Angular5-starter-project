@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+</div>
+<h2>Curreny Conversion</h2>
+<h3>Date: {{dateVal}}</h3>
+<h3>From  1 EUR</h3>
+
+<h3>To</h3>
+<select class='select-option' required [(ngModel)]='optionSelectedTo' (ngModelChange)='onOptionsSelectedTo($event)'>
+  <option class='option' *ngFor='let option of options' [value]="option">{{option}}</option>
+</select>
+
+<h3>Rate: {{val}}</h3>
+
+
